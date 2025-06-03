@@ -154,7 +154,7 @@
           {
             "position": {
               "x": -3030,
-              "y": -810
+              "y": -905
             },
             "size": {
               "width": 90,
@@ -934,6 +934,56 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verified",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verified"
+            ],
+            "id": "a0194463-bc92-4ea3-bb7b-5176bd462e40",
+            "source": {
+              "cell": "81db13fa-eb9d-4d3d-a8ab-6a2dd189d762",
+              "port": "ae9aa36a-3b13-4a5b-9d82-516460dc6bc3"
+            },
+            "target": {
+              "cell": "e591945c-81cd-4474-a8ac-e4b46cd6770e",
+              "port": "10fc8549-3b58-4a69-b87c-d3353c7d2432"
+            },
+            "vertices": [
+              {
+                "x": -3030,
+                "y": -710
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -941,27 +991,27 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "GenericTrust Boundary",
+              "name": "Generic Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "GenericTrust Boundary"
+              "Generic Trust Boundary"
             ],
             "id": "01019563-f28d-432d-af18-e996d8290527",
             "source": {
-              "x": -3150,
-              "y": -710
+              "x": -3180,
+              "y": -790
             },
             "target": {
-              "x": -2840,
-              "y": -710
+              "x": -2800,
+              "y": -800
             },
             "vertices": [
               {
-                "x": -2980,
-                "y": -690
+                "x": -2990,
+                "y": -770
               }
             ]
           },
