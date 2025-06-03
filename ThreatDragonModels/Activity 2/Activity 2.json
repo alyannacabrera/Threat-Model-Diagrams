@@ -1102,56 +1102,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User Sends User Credentials",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "User Sends User Credentials"
-            ],
-            "id": "2718dbb7-7b0e-420e-8a8f-f967f1f7155f",
-            "source": {
-              "cell": "e591945c-81cd-4474-a8ac-e4b46cd6770e",
-              "port": "5cbe01e8-7c34-4f66-ac40-00bd25499735"
-            },
-            "target": {
-              "cell": "ad7c4aa0-44fa-4c9b-b3cc-6db7446b1cb1",
-              "port": "b4cf273f-790d-40b4-b513-494f90c7a9ae"
-            },
-            "vertices": [
-              {
-                "x": -3260,
-                "y": -660
-              }
-            ]
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1269,6 +1219,56 @@
             "vertices": [
               {
                 "x": -3100,
+                "y": -660
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Sends User Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "User Sends User Credentials"
+            ],
+            "id": "2718dbb7-7b0e-420e-8a8f-f967f1f7155f",
+            "source": {
+              "cell": "e591945c-81cd-4474-a8ac-e4b46cd6770e",
+              "port": "5cbe01e8-7c34-4f66-ac40-00bd25499735"
+            },
+            "target": {
+              "cell": "ad7c4aa0-44fa-4c9b-b3cc-6db7446b1cb1",
+              "port": "b4cf273f-790d-40b4-b513-494f90c7a9ae"
+            },
+            "vertices": [
+              {
+                "x": -3260,
                 "y": -660
               }
             ]
