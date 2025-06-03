@@ -435,7 +435,7 @@
           },
           {
             "position": {
-              "x": -2805,
+              "x": -2755,
               "y": -785
             },
             "size": {
@@ -580,7 +580,7 @@
           },
           {
             "position": {
-              "x": -2805,
+              "x": -2755,
               "y": -603
             },
             "size": {
@@ -932,6 +932,70 @@
                 "y": -500
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "GenericTrust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "GenericTrust Boundary"
+            ],
+            "id": "01019563-f28d-432d-af18-e996d8290527",
+            "source": {
+              "x": -3150,
+              "y": -710
+            },
+            "target": {
+              "x": -2840,
+              "y": -710
+            },
+            "vertices": [
+              {
+                "x": -2980,
+                "y": -690
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "959d4a8d-c274-43ea-b68c-25d0b6ffa691",
+            "source": {
+              "x": -2778,
+              "y": -838
+            },
+            "target": {
+              "x": -2770,
+              "y": -420
+            },
+            "vertices": [
+              {
+                "x": -2800,
+                "y": -630
+              }
+            ],
+            "zIndex": 11
           }
         ]
       }
