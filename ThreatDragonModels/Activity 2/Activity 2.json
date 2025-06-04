@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "ad7c4aa0-44fa-4c9b-b3cc-6db7446b1cb1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -172,6 +172,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -255,7 +256,6 @@
               ]
             },
             "id": "81db13fa-eb9d-4d3d-a8ab-6a2dd189d762",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Authorization\nProvider",
@@ -313,6 +313,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -430,8 +431,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -459,6 +459,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -542,7 +543,6 @@
               ]
             },
             "id": "f7f06da6-3eef-4879-b3d3-771fd6e795bf",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -602,6 +602,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -685,7 +686,6 @@
               ]
             },
             "id": "10044a37-95e7-4db8-bc1c-3c205aec0460",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -1021,56 +1021,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Verifies the Priviledge",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Verifies the Priviledge"
-            ],
-            "id": "1ec75761-91e3-4a89-851c-43332ddc3b6b",
-            "source": {
-              "cell": "81db13fa-eb9d-4d3d-a8ab-6a2dd189d762",
-              "port": "e3b02bdd-0c05-4811-a20c-472827d21346"
-            },
-            "target": {
-              "cell": "f7f06da6-3eef-4879-b3d3-771fd6e795bf",
-              "port": "c439a346-89cf-4b43-b5a2-dc1cce566e63"
-            },
-            "vertices": [
-              {
-                "x": -2790,
-                "y": -890
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Verified",
               "description": "",
               "outOfScope": false,
@@ -1274,9 +1224,60 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verifies the Priviledge",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verifies the Priviledge"
+            ],
+            "id": "1ec75761-91e3-4a89-851c-43332ddc3b6b",
+            "source": {
+              "cell": "81db13fa-eb9d-4d3d-a8ab-6a2dd189d762",
+              "port": "e3b02bdd-0c05-4811-a20c-472827d21346"
+            },
+            "target": {
+              "cell": "f7f06da6-3eef-4879-b3d3-771fd6e795bf",
+              "port": "c439a346-89cf-4b43-b5a2-dc1cce566e63"
+            },
+            "vertices": [
+              {
+                "x": -2790,
+                "y": -890
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 11,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -1302,8 +1303,7 @@
                 "x": -2760,
                 "y": -690
               }
-            ],
-            "zIndex": 11
+            ]
           }
         ]
       }
